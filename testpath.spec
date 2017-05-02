@@ -1,6 +1,6 @@
 Name     : testpath
 Version  : 0.3
-Release  : 1
+Release  : 2
 URL      : https://pypi.python.org/packages/fe/53/301852a341e1f5cc82f9987d28595fb04ef2d9869a4efa2d379d207b2b77/testpath-0.3-py2.py3-none-any.whl
 Source0  : https://pypi.python.org/packages/fe/53/301852a341e1f5cc82f9987d28595fb04ef2d9869a4efa2d379d207b2b77/testpath-0.3-py2.py3-none-any.whl
 Summary  : No detailed summary available
