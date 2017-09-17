@@ -1,5 +1,5 @@
 PKG_NAME := testpath
-URL := https://github.com/jupyter/testpath/archive/0.3.tar.gz
+URL := http://pypi.debian.net/testpath/testpath-0.3.1.tar.gz
 
 
 include ../common/Makefile.common
