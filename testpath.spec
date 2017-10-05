@@ -4,12 +4,13 @@
 #
 Name     : testpath
 Version  : 0.3.1
-Release  : 3
+Release  : 4
 URL      : http://pypi.debian.net/testpath/testpath-0.3.1.tar.gz
 Source0  : http://pypi.debian.net/testpath/testpath-0.3.1.tar.gz
 Summary  : Test utilities for code working with files and commands
 Group    : Development/Tools
 License  : MIT
+Requires: testpath-python3
 Requires: testpath-python
 BuildRequires : pbr
 BuildRequires : pip
@@ -23,9 +24,19 @@ Testpath is a collection of utilities for Python code working with files and com
 %package python
 Summary: python components for the testpath package.
 Group: Default
+Requires: testpath-python3
 
 %description python
 python components for the testpath package.
+
+
+%package python3
+Summary: python3 components for the testpath package.
+Group: Default
+Requires: python3-core
+
+%description python3
+python3 components for the testpath package.
 
 
 %prep
@@ -36,7 +47,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1505684850
+export SOURCE_DATE_EPOCH=1507179799
 python3 setup.py build -b py3
 
 %install
@@ -50,5 +61,8 @@ echo ----[ mark ]----
 %defattr(-,root,root,-)
 
 %files python
+%defattr(-,root,root,-)
+
+%files python3
 %defattr(-,root,root,-)
 /usr/lib/python3*/*
