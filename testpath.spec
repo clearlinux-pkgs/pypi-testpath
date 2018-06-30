@@ -4,7 +4,7 @@
 #
 Name     : testpath
 Version  : 0.3.1
-Release  : 10
+Release  : 11
 URL      : http://pypi.debian.net/testpath/testpath-0.3.1.tar.gz
 Source0  : http://pypi.debian.net/testpath/testpath-0.3.1.tar.gz
 Summary  : Test utilities for code working with files and commands
