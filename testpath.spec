@@ -4,7 +4,7 @@
 #
 Name     : testpath
 Version  : 0.4.2
-Release  : 19
+Release  : 20
 URL      : https://files.pythonhosted.org/packages/06/30/9a7e917066d851d8b4117e85794b5f14516419ea714a8a2681ec6aa8a981/testpath-0.4.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/06/30/9a7e917066d851d8b4117e85794b5f14516419ea714a8a2681ec6aa8a981/testpath-0.4.2.tar.gz
 Summary  : Test utilities for code working with files and commands
