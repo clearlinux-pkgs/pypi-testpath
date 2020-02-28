@@ -4,7 +4,7 @@
 #
 Name     : testpath
 Version  : 0.4.4
-Release  : 23
+Release  : 24
 URL      : https://files.pythonhosted.org/packages/2c/b3/5d57205e896d8998d77ad12aa42ebce75cd97d8b9a97d00ba078c4c9ffeb/testpath-0.4.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/2c/b3/5d57205e896d8998d77ad12aa42ebce75cd97d8b9a97d00ba078c4c9ffeb/testpath-0.4.4.tar.gz
 Summary  : Test utilities for code working with files and commands
@@ -18,6 +18,19 @@ BuildRequires : python3-dev
 
 %description
 Testpath is a collection of utilities for Python code working with files and commands.
+
+It contains functions to check things on the filesystem, and tools for mocking
+system commands and recording calls to those.
+
+`Documentation on ReadTheDocs <https://testpath.readthedocs.io/en/latest/>`_
+
+e.g.::
+
+    import testpath
+    testpath.assert_isfile(path)
+    
+    with testpath.assert_calls('git', ['add', path]):
+        function_under_test()
 
 %package license
 Summary: license components for the testpath package.
@@ -40,6 +53,7 @@ python components for the testpath package.
 Summary: python3 components for the testpath package.
 Group: Default
 Requires: python3-core
+Provides: pypi(testpath)
 
 %description python3
 python3 components for the testpath package.
@@ -54,7 +68,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1579720980
+export SOURCE_DATE_EPOCH=1582911839
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
