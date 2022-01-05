@@ -4,7 +4,7 @@
 #
 Name     : testpath
 Version  : 0.5.0
-Release  : 40
+Release  : 41
 URL      : https://files.pythonhosted.org/packages/dd/bf/245f32010f761aaeff132278e91e0d0ae1c360d6f3708a11790fdc1410d2/testpath-0.5.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/dd/bf/245f32010f761aaeff132278e91e0d0ae1c360d6f3708a11790fdc1410d2/testpath-0.5.0.tar.gz
 Summary  : Test utilities for code working with files and commands
@@ -14,6 +14,7 @@ Requires: testpath-license = %{version}-%{release}
 Requires: testpath-python = %{version}-%{release}
 Requires: testpath-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
+BuildRequires : pypi(flit_core)
 BuildRequires : python3-dev
 
 %description
@@ -55,7 +56,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1629183177
+export SOURCE_DATE_EPOCH=1641424055
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
