@@ -1,5 +1,5 @@
 PKG_NAME := pypi-testpath
-URL = https://files.pythonhosted.org/packages/dd/bf/245f32010f761aaeff132278e91e0d0ae1c360d6f3708a11790fdc1410d2/testpath-0.5.0.tar.gz
+URL = https://files.pythonhosted.org/packages/08/ad/a3e7d580902f57e31d2181563fc4088894692bb6ef79b816344f27719cdc/testpath-0.6.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
