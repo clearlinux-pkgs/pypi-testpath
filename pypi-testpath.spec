@@ -5,7 +5,7 @@
 #
 Name     : pypi-testpath
 Version  : 0.6.0
-Release  : 53
+Release  : 54
 URL      : https://files.pythonhosted.org/packages/08/ad/a3e7d580902f57e31d2181563fc4088894692bb6ef79b816344f27719cdc/testpath-0.6.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/08/ad/a3e7d580902f57e31d2181563fc4088894692bb6ef79b816344f27719cdc/testpath-0.6.0.tar.gz
 Summary  : Test utilities for code working with files and commands
